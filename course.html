@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details | Harmony Music Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="index.html#home" class="logo">
+                <img src="images/Piano.png" alt="Harmony Music Academy logo">
+                <div>
+                    <span class="logo-name">Harmony Music Academy</span>
+                    <span class="logo-tag">School of Music &amp; Performing Arts</span>
+                </div>
+            </a>
+            <nav>
+                <a href="index.html#home">Home</a>
+                <a href="index.html#programmes">Programmes</a>
+                <a href="index.html#courses">Fees</a>
+                <a href="index.html#register">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Course banner: photo and title are filled in by course.js -->
+    <section class="course-hero" id="courseHero">
+        <div>
+            <a href="index.html#programmes" class="back-link">← Back to all programmes</a>
+            <h1 id="courseTitle">Course</h1>
+            <p id="courseTagline"></p>
+        </div>
+    </section>
+
+    <!-- Course details -->
+    <section class="section">
+        <div class="course-layout">
+            <div>
+                <h2>About this course</h2>
+                <p id="courseDescription"></p>
+
+                <h2>What you will learn</h2>
+                <ul id="courseLearn"></ul>
+
+                <h2>Who it is for</h2>
+                <p id="courseWho"></p>
+            </div>
+
+            <aside class="info-card">
+                <h3>Duration</h3>
+                <p id="courseDuration"></p>
+
+                <h3>Fee</h3>
+                <p id="courseFee"></p>
+
+                <h3>Lesson times</h3>
+                <p>Weekdays: 3:00 pm – 7:00 pm<br>Saturdays: 9:00 am – 4:00 pm</p>
+
+                <a id="enrolButton" href="index.html#register" class="btn-enrol">Enrol in this course</a>
+            </aside>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h3>Contact us</h3>
+        <p>P.O. Box 1234-00100, Nairobi, Kenya
+            <br>Phone: 0708 860 906<br>Email: info@harmonyacademy.ac.ke
+            <br>Harmony Music Academy. All rights reserved.</p>
+    </footer>
+
+    <script src="course.js"></script>
+</body>
+</html>

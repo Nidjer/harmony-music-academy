@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmony Music Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========== 1. HEADER AND NAVIGATION ========== -->
+    <header>
+        <div class="header-inner">
+            <a href="#home" class="logo">
+                <img src="images/piano.png" alt="Harmony Music Academy logo">
+                <div>
+                    <span class="logo-name">Harmony Music Academy</span>
+                    <span class="logo-tag">School of Music &amp; Performing Arts</span>
+                </div>
+            </a>
+
+            <div class="contact-pill">📍 Nairobi, Kenya &nbsp;•&nbsp; 📞 0708 860 906</div>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#programmes">Programmes</a>
+                <a href="#courses">Fees</a>
+                <a href="#register">Register</a>
+            </nav>
+
+            <a href="#register" class="btn btn-small">Apply Now</a>
+        </div>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section id="home" class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-dots"></div>
+
+        <div class="hero-inner">
+            <!-- Left: text -->
+            <div class="hero-text">
+                <span class="badge">● Admissions open for the new term</span>
+                <h1>Welcome to <em>Harmony Academy</em></h1>
+                <p>Nurturing curious minds, building strong character and preparing learners for a bright future through music.</p>
+
+                <div class="hero-buttons">
+                    <button onclick="showWelcome()" class="btn">Explore Our Programmes ↓</button>
+                    <a href="#courses" class="btn btn-outline">View Fees ↗</a>
+                </div>
+
+                <div class="stats">
+                    <div><strong>6</strong><span>Programmes</span></div>
+                    <div><strong>8</strong><span>Students max per class</span></div>
+                    <div><strong>6</strong><span>Days of lessons a week</span></div>
+                </div>
+            </div>
+
+            <!-- Right: framed photo -->
+            <div class="hero-photo">
+                <div class="photo-frame">
+                    <img src="images/Logo.jpg" alt="Students playing guitar, cello, drums and piano at Harmony Academy">
+                    <div class="photo-caption">🎵 Learning together, every week</div>
+                </div>
+                <div class="floating-badge">
+                    <strong>All ages welcome</strong>
+                    <span>Complete beginners to advanced</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== INFO STRIP ========== -->
+    <div class="ticker">
+        <span class="ticker-title">♫ Now enrolling</span>
+        <span>Piano</span><span>•</span><span>Guitar</span><span>•</span><span>Violin</span><span>•</span>
+        <span>Drums</span><span>•</span><span>Vocal Training</span><span>•</span><span>Music Theory</span>
+    </div>
+
+    <!-- ========== 2. ABOUT ========== -->
+    <section id="about" class="section">
+        <div class="section-heading left">
+            <span class="small-heading">Welcome to Harmony Academy</span>
+            <h2>About Our School</h2>
+            <p>Harmony Music Academy is a music school in Nairobi for learners of every age. Our qualified, friendly
+               teachers use modern, learner-centred methods so that every student can discover and grow their musical talent.</p>
+        </div>
+
+        <div class="pillars">
+            <div class="pillar">
+                <div class="pillar-icon">🎹</div>
+                <h3>Practice Studios</h3>
+                <p>Quiet practice rooms with pianos, keyboards, guitars, violins and a full drum kit for every lesson.</p>
+                <ul>
+                    <li>✓ One-on-one and small group lessons</li>
+                    <li>✓ Instruments available in class</li>
+                </ul>
+            </div>
+
+            <div class="pillar">
+                <div class="pillar-icon">🎤</div>
+                <h3>Ensembles &amp; Concerts</h3>
+                <p>Learners play together in bands, choirs and small ensembles, and perform at our end-of-term concert.</p>
+                <ul>
+                    <li>✓ Band and choir practice</li>
+                    <li>✓ End-of-term concert</li>
+                </ul>
+            </div>
+
+            <div class="pillar">
+                <div class="pillar-icon">🎼</div>
+                <h3>Theory &amp; Exams</h3>
+                <p>New to music? Practise the basics for free at
+                    <a href="https://www.musictheory.net/" target="_blank" rel="noopener">musictheory.net</a>,
+                    an online resource for reading notes, rhythm and scales.</p>
+                <ul>
+                    <li>✓ Reading and writing music</li>
+                    <li>✓ Support for graded exams</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="quote-banner">
+            <blockquote>
+                "Music produces a kind of pleasure which human nature cannot do without."
+                <span>— Confucius</span>
+            </blockquote>
+            <a href="#register" class="btn btn-dark">Enrol a Student</a>
+        </div>
+    </section>
+
+    <!-- ========== PROGRAMMES (photo cards) ========== -->
+    <section id="programmes" class="section section-tinted">
+        <div class="section-heading">
+            <span class="small-heading">What We Offer</span>
+            <h2>Our Programmes</h2>
+            <p>Discover your musical talent and find your sound.</p>
+        </div>
+
+        <div class="card-grid">
+            <div class="card" style="background-image: url('images/Piano.png');">
+                <span class="card-tag">3 Months</span>
+                <h3>Piano</h3>
+                <p>Learn to read music, play chords and scales, and perform your favourite songs.</p>
+                <a href="course.html?course=piano" class="card-link">View course →</a>
+            </div>
+
+            <div class="card" style="background-image: url('images/Guitar.jpg');">
+                <span class="card-tag">3 Months</span>
+                <h3>Guitar</h3>
+                <p>Develop your technique, learn chords, and build your confidence as a guitarist.</p>
+                <a href="course.html?course=guitar" class="card-link">View course →</a>
+            </div>
+
+            <div class="card" style="background-image: url('images/Logo.jpg');">
+                <span class="card-tag">3 Months</span>
+                <h3>Violin</h3>
+                <p>Learn violin technique, read sheet music, and develop your musical expression.</p>
+                <a href="course.html?course=violin" class="card-link">View course →</a>
+            </div>
+
+            <div class="card" style="background-image: url('images/Drums.png');">
+                <span class="card-tag">3 Months</span>
+                <h3>Drums</h3>
+                <p>Build your sense of rhythm, learn drum patterns, and play contemporary music.</p>
+                <a href="course.html?course=drums" class="card-link">View course →</a>
+            </div>
+
+            <div class="card" style="background-image: url('images/Singing.png');">
+                <span class="card-tag">2 Months</span>
+                <h3>Vocal Training</h3>
+                <p>Develop your voice through breathing exercises, pitch training, and performance practice.</p>
+                <a href="course.html?course=vocal" class="card-link">View course →</a>
+            </div>
+
+            <div class="card" style="background-image: url('images/Musictheory.png');">
+                <span class="card-tag">2 Months</span>
+                <h3>Music Theory</h3>
+                <p>Understand notes, rhythm, harmony, scales, and the foundations of composition.</p>
+                <a href="course.html?course=theory" class="card-link">View course →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== COURSES AND FEES TABLE ========== -->
+    <section id="courses" class="section">
+        <div class="section-heading left">
+            <span class="small-heading">Our Courses</span>
+            <h2>Courses &amp; Fees</h2>
+            <p>Choose a course that matches your interests and goals.</p>
+        </div>
+
+        <div class="table-card">
+            <table id="feesTable">
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Duration (Months)</th>
+                        <th>Fee per Month (Ksh)</th>
+                        <th>Total Fee (Ksh)</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Piano</td>
+                        <td>3</td>
+                        <td>3,000</td>
+                        <td class="total"></td>
+                        <td><button class="btn-select" onclick="chooseCourse('Piano')">Select</button></td>
+                    </tr>
+                    <tr>
+                        <td>Guitar</td>
+                        <td>3</td>
+                        <td>2,500</td>
+                        <td class="total"></td>
+                        <td><button class="btn-select" onclick="chooseCourse('Guitar')">Select</button></td>
+                    </tr>
+                    <tr>
+                        <td>Violin</td>
+                        <td>3</td>
+                        <td>5,000</td>
+                        <td class="total"></td>
+                        <td><button class="btn-select" onclick="chooseCourse('Violin')">Select</button></td>
+                    </tr>
+                    <tr>
+                        <td>Drums</td>
+                        <td>3</td>
+                        <td>3,000</td>
+                        <td class="total"></td>
+                        <td><button class="btn-select" onclick="chooseCourse('Drums')">Select</button></td>
+                    </tr>
+                    <tr>
+                        <td>Vocal Training</td>
+                        <td>2</td>
+                        <td>1,500</td>
+                        <td class="total"></td>
+                        <td><button class="btn-select" onclick="chooseCourse('Vocal Training')">Select</button></td>
+                    </tr>
+                    <tr>
+                        <td>Music Theory</td>
+                        <td>2</td>
+                        <td>2,000</td>
+                        <td class="total"></td>
+                        <td><button class="btn-select" onclick="chooseCourse('Music Theory')">Select</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="note">Note: these are sample fees for this academic project.</p>
+        </div>
+    </section>
+
+    <!-- ========== 3. REGISTRATION FORM ========== -->
+    <section id="register" class="section section-tinted">
+        <div class="register-grid">
+
+            <!-- Left: instructions -->
+            <div class="register-info">
+                <div class="section-heading left">
+                    <span class="small-heading">Join Our Community</span>
+                    <h2>Register for a Course</h2>
+                    <p>Fill in the form to apply for admission. Fields marked * are required.</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Why learn with us?</h3>
+                    <ul>
+                        <li>✓ Small classes of no more than 8 students</li>
+                        <li>✓ Qualified, friendly music teachers</li>
+                        <li>✓ Beginners of all ages welcome</li>
+                        <li>✓ End-of-term concert for every learner</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h3>Lesson times</h3>
+                    <p>Weekdays: 3:00 pm – 7:00 pm<br>Saturdays: 9:00 am – 4:00 pm</p>
+                </div>
+
+                <div class="help-box">
+                    <span>☎</span>
+                    <div>
+                        <strong>Need help?</strong>
+                        <p>Call 0708 860 906 or email info@harmonyacademy.ac.ke</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: the form -->
+            <form id="registrationForm" novalidate>
+                <div class="form-row">
+                    <div>
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="e.g. Ndichu Marima">
+                        <small class="error" id="nameError"></small>
+                    </div>
+                    <div>
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="e.g. marima@gmail.com">
+                        <small class="error" id="emailError"></small>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div>
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="e.g. 0701234567">
+                        <small class="error" id="phoneError"></small>
+                    </div>
+                    <div>
+                        <label for="course">Course *</label>
+                        <select id="course" name="course">
+                            <option value="">Select a course</option>
+                            <option>Piano</option>
+                            <option>Guitar</option>
+                            <option>Violin</option>
+                            <option>Drums</option>
+                            <option>Vocal Training</option>
+                            <option>Music Theory</option>
+                        </select>
+                        <small class="error" id="courseError"></small>
+                    </div>
+                </div>
+
+                <label>Gender *</label>
+                <div class="radio-row">
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                </div>
+                <small class="error" id="genderError"></small>
+
+                <label for="message">Additional Information</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us about yourself (optional)"></textarea>
+
+                <label class="checkbox"><input type="checkbox" id="terms"> I accept the school rules and regulations *</label>
+                <small class="error" id="termsError"></small>
+
+                <div class="form-buttons">
+                    <button type="submit" class="btn">Submit Application</button>
+                    <button type="reset" class="btn btn-light">Clear Form</button>
+                </div>
+
+                <p id="formMessage"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER / CONTACT ========== -->
+    <footer id="contact">
+        <h3>Harmony Music Academy</h3>
+        <p>P.O. Box 1234-00100, Nairobi, Kenya</p>
+        <p>Phone: 0708 860 906 &nbsp;|&nbsp; Email: info@harmonyacademy.ac.ke</p>
+        <p class="copyright">&copy; <span id="year"></span> Harmony Music Academy. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
